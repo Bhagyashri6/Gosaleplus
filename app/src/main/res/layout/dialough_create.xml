@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    android:weightSum="1">
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+
+       android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:layout_height="80dp"
+        android:weightSum="1">
+
+        <ImageView
+
+           android:layout_centerHorizontal="true"
+
+            android:scaleType="centerCrop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/edit" />
+
+
+    <ImageView
+
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:id="@+id/closeDialoug" />
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="1"
+            android:padding="1dp"
+            android:background="@drawable/oval_background"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="left"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text=" Date:"
+
+                />
+
+            <Spinner
+
+                android:id="@+id/datespin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="1"
+            android:padding="1dp"
+            android:background="@drawable/oval_background"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+
+
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="Area:"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold" />
+
+        <Spinner
+
+            android:id="@+id/arealistspin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:imeOptions="actionDone"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="1"
+            android:padding="1dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+
+
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="" />
+
+            <AutoCompleteTextView
+                android:background="@drawable/oval_background"
+                android:id="@+id/autoComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Distributor...."
+                android:padding="10dp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+    android:id="@+id/adddistributor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/add_red"
+
+        />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Distributor"
+        android:typeface="serif"
+
+        style="@style/TextAppearance.AppCompat.Small"
+        />
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="3.05"
+            android:orientation="horizontal">
+
+           <Button
+            android:padding="10dp"
+               android:id="@+id/createbutton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:textColor="#fff"
+               android:gravity="center"
+               android:text="Create"
+               android:drawablePadding="5dp"
+               android:paddingLeft="5dp"
+                android:drawableLeft="@drawable/checked"
+
+
+               android:background="@drawable/rounded_for_button"
+               />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

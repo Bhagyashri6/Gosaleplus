@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="10dp">-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/Bottom"-->
+    <!--android:layout_weight="1.5"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:orientation="vertical"-->
+
+    <!--android:layout_gravity="bottom"-->
+
+    <!--&gt;-->
+
+    <!--<LinearLayout-->
+
+    <!--android:orientation="vertical"-->
+    <!--android:weightSum="3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:elevation="15dp"-->
+    <!--&gt;-->
+    <!--<LinearLayout-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/round_corner_button">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Distributor Info"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:textColor="#fff"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/round_corner_button">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Order Collection"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:textColor="#fff"-->
+    <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/round_corner_button">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Stock Collection"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:textColor="#fff"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom"
+
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+
+            android:gravity="right"
+
+            >
+
+            <ImageView
+                android:id="@+id/closee"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="4"
+
+            android:background="@drawable/border_to_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+
+                android:id="@+id/ordercollection"
+
+                android:layout_weight="1"
+                android:weightSum="2"
+
+
+                android:background="@drawable/border_to_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/spc" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Collecton."
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/stockcollection"
+
+                android:background="@drawable/border_to_textview"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/stockq"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stock Collection"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:background="@drawable/border_to_textview"
+                android:weightSum="2"
+                android:layout_weight="1"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/paymentinfo" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Info"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/distributorinfo"
+                android:background="@drawable/border_to_textview"
+                android:weightSum="2"
+                android:layout_weight="1"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/contactd"
+                    android:id="@+id/imageView4" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Distributor Info."
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

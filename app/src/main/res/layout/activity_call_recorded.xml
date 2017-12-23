@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_call_recorded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.chandrakant.abc.crm_app.CallRecorded"
+    android:orientation="vertical">
+    <LinearLayout
+       android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="search here.."
+            android:drawableLeft="@drawable/searchf"
+            android:id="@+id/editText2"
+            android:drawablePadding="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

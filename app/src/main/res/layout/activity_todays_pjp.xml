@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chandrakant.abc.crm_app.TodaysPJP"
+    android:orientation="vertical"
+    android:id="@+id/activity_todays_pjp"
+    >
+
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scc">
+
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabLayout"
+                app:tabMode="scrollable"
+                app:tabGravity="fill"
+
+                app:tabTextColor="#ffffff"
+
+                >
+
+
+            </android.support.design.widget.TabLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewPager"
+
+            >
+
+
+
+        </android.support.v4.view.ViewPager>
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:id="@+id/fab_plus"
+            app:fabSize="auto"
+
+            android:layout_marginRight="@dimen/fab_margin_right"
+            android:src="@drawable/ic_action_plus"
+
+            android:layout_marginBottom="16dp"
+               />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="100dp"
+            android:layout_gravity="bottom|end"
+            >
+
+            <TextView
+                android:id="@+id/textfabcreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ed222425"
+                android:text="Create PJP"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:layout_marginRight="23dp"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                />
+
+
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_action_create"
+            android:elevation="6dp"
+            app:backgroundTint="@color/fab1_color"
+            app:borderWidth="0dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="90dp"
+            android:id="@+id/fab_create"
+            android:visibility="invisible"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="180dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:background="#ed222425"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                android:padding="5dp"
+                android:layout_marginRight="23dp"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+
+                android:id="@+id/textfabviewall" />
+
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:visibility="invisible"
+            android:layout_marginBottom="170dp"
+            android:src="@drawable/ic_action_viewall"
+            android:elevation="6dp"
+            app:backgroundTint="@color/fab2_color"
+            android:id="@+id/fab_viewall"
+
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+<!--<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomsheet"
+    android:clipToPadding="true"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+
+    <LinearLayout
+        android:id="@+id/Bottom"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/canceld"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="3"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/distributorinfo"
+                android:background="#df5050"
+
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Distributor Info."
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ordercollection"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#eddf6f50"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Order Collecton."
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stockcollection"
+                android:layout_margin="2dp"
+                android:background="#df5050"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Stock Collection"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>-->
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

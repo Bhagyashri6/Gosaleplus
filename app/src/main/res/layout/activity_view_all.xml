@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chandrakant.abc.crm_app.ViewAll">
+
+
+
+
+
+
+    <LinearLayout
+
+        android:weightSum="2"
+        android:id="@+id/kk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="0.5dp"
+            android:id="@+id/sort"
+
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sorting"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="10dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+          android:layout_marginLeft="5dp"
+            android:text="Sort"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:id="@+id/filter"
+
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:text="Filter"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/kk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/all"
+android:visibility="gone"
+        >
+    <LinearLayout
+        android:weightSum="1"
+        android:id="@+id/sort1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/kk"
+        android:background="@drawable/border_to_textview"
+
+        >
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/datecheck"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textSize="14sp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/currentdate"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Select Date"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:background="@drawable/border_to_textview"
+                    android:textColor="#d95e5e"
+                    android:visibility="gone"
+                    />
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/namecheck"
+                android:layout_weight="1"
+                android:text="Comapany"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/addresscheck"
+                android:layout_weight="1"
+                android:text="City"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewtext"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+
+            >
+
+            <EditText
+                android:id="@+id/searchtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Search Here.."
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:layout_margin="10dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/border_to_textview"
+        android:weightSum="3"
+        android:id="@+id/sorting"
+        android:layout_below="@id/kk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <RadioButton
+            android:id="@+id/bydate"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By Date"
+            />
+
+            <RadioButton
+
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By company"
+                android:id="@+id/bycompany" />
+
+            <RadioButton
+                android:id="@+id/bycity"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By City"
+            />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:id="@+id/ascdsc"
+        android:background="@drawable/border_to_textview"
+        android:layout_below="@id/sorting"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+       >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/asc"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asc"
+                />
+
+
+            <RadioButton
+                android:id="@+id/dsc"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Dsc"
+                />
+<TextView
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@id/all"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_viewtab1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

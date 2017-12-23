@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.chandrakant.abc.crm_app.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#f0f0f0"
+                    >
+
+
+                    <TextView
+                       android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:typeface="serif"
+                        android:textColor="#546E7A"
+                        android:text="Create Outlet"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_to_textview"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textSize="14dp"
+                            android:textColor="#78909C"
+                            android:text="Outlet Name"/>
+                        <EditText
+                            android:id="@+id/outletname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+
+                            android:layout_marginRight="10dp"
+                            android:inputType="text"
+                            android:drawablePadding="10dp"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#78909C"
+                            />
+                        <!-- android:drawableLeft="@drawable/user_icon"-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Address"
+                            android:textSize="14dp"
+                            android:textColor="#78909C"/>
+                        <EditText
+                            android:id="@+id/outletaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+
+                            android:drawablePadding="10dp"
+                            android:textSize="14dp"
+                            android:textColor="#78909C"
+                            />
+                        <!-- android:drawableLeft="@drawable/homer"-->
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Area"
+                            android:textSize="14dp"
+                            android:textColor="#78909C"/>
+
+                        <EditText
+                            android:id="@+id/area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14dp"
+                            android:maxLength="6"
+
+                            android:textColor="#78909C"
+                            />
+                        <!--android:drawableLeft="@drawable/homer"-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="City"
+                            android:textSize="14dp"
+                            android:textColor="#78909C"/>
+
+                        <EditText
+                            android:id="@+id/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14dp"
+                            android:maxLength="6"
+
+                            android:textColor="#78909C"
+                            />
+                        <!--android:drawableLeft="@drawable/city"-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="State"
+                            android:textSize="14dp"
+                            android:textColor="#78909C"/>
+                        <EditText
+                                android:id="@+id/state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14dp"
+
+                            android:maxLength="6"
+                            android:textColor="#78909C"
+                            />
+                        <!--android:drawableLeft="@drawable/flag"-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="pincode"
+                            android:textSize="14dp"
+                            android:textColor="#78909C"/>
+                        <EditText
+                            android:id="@+id/pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:inputType="number"
+                            android:textSize="14dp"
+                            android:maxLength="6"
+                            android:textColor="#78909C"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Owner Name"
+                            android:textSize="14dp"
+                            android:textColor="#78909C"/>
+                        <EditText
+                            android:id="@+id/owenername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14dp"
+                            android:inputType="text"
+
+                            android:maxLength="6"
+                            android:textColor="#78909C"
+                            />
+                        <!--android:drawableLeft="@drawable/user_icon"-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Contact No."
+                            android:textSize="14dp"
+
+                            android:textColor="#78909C"/>
+                        <EditText
+                            android:id="@+id/contactno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:inputType="phone"
+                            android:textSize="14dp"
+
+                            android:maxLength="10"
+                            android:textColor="#78909C"
+                            />
+                        <!--android:drawableLeft="@drawable/phone"-->
+                        <Button
+                            android:id="@+id/savemyoutlet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="7dp"
+                            android:text="save"
+                            android:textColor="#fff"
+                            android:background="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:orientation="vertical"
+   android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!--<ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageView"
+        android:layout_width="365dp"
+        android:background="@drawable/download"
+        android:layout_height="200dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+      />-->
+<LinearLayout
+
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@drawable/download">
+    <TextView
+            android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Welcome Mr. "
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Rohit Mane" />
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/recordings2"
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:alpha="0.8"
+    android:layout_marginTop="25dp">
+
+    <ImageView android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:id="@+id/recordings"
+        android:background="@drawable/ic_menu_slideshow"
+        android:title="Recordings " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordings"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:textSize="14dp"
+
+
+        android:typeface="sans"
+        android:textColor="#000"
+        />
+
+</LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#ecccc9c9"/>
+</LinearLayout>

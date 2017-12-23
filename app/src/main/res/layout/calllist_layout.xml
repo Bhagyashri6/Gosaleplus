@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_weight="0.11">
+        <LinearLayout
+            android:layout_weight="1.7"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user_icon"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_weight="1.7"
+                    android:id="@+id/callername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chandrakant"
+                    android:gravity="center"
+                    android:layout_marginRight="50dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:typeface="serif"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+<TextView
+    android:layout_weight="1.9"
+    android:id="@+id/number"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="81085681288"
+    android:gravity="center"
+    android:layout_marginRight="50dp"
+    android:textSize="14dp"
+    android:layout_marginTop="10dp"
+    android:textColor="#000"
+    />
+
+                <ImageButton
+                    android:id="@+id/play1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                   android:src="@android:drawable/ic_media_play"
+                    android:layout_weight="0.02" />
+
+            </LinearLayout>
+<LinearLayout
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/calltime"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:textSize="12sp"
+                android:textColor="#000"
+                />
+    <TextView
+        android:id="@+id/date"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02/08/2017"
+        android:layout_gravity="center"
+        android:layout_marginRight="50dp"
+        android:textSize="12sp"
+        android:textColor="#000"
+        />
+</LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

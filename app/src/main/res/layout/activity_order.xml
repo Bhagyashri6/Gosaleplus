@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="com.chandrakant.abc.crm_app.OrderActivity">
+
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/totalamount"
+    android:orientation="horizontal"
+    android:gravity="right|center"
+    android:background="#40a1a6"
+
+    android:layout_marginBottom="5dp"
+
+    >
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total : "
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:textColor="#fff"
+        android:typeface="sans"
+        />
+    <TextView
+        android:id="@+id/totalamountorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00.00"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:typeface="sans"
+        android:layout_marginRight="10dp"
+        />
+
+</LinearLayout>
+
+
+    <ListView
+        android:layout_below="@id/totalamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listorder"
+
+        android:layout_above="@+id/placeorder">
+    </ListView>
+
+
+
+
+
+
+<LinearLayout
+android:layout_below="@id/listorder"
+
+android:layout_width="match_parent"
+
+android:layout_height="match_parent"
+    android:weightSum="1">
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/placeorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

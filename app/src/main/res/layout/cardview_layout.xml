@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/cardViewrr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="20dp">
+
+            <ImageView
+                android:id="@+id/pjpimage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/mapp" />
+
+            <TextView
+                android:id="@+id/distributorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/pjpimage"
+                android:text="Distributor Name"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@id/distributorName"
+                android:layout_toRightOf="@id/pjpimage"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/distributorName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_toRightOf="@id/pjpimage"
+                android:text="Address"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@id/address"
+                android:layout_toRightOf="@id/pjpimage"
+                android:background="#f2f2f2" />
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/address"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/pjpimage"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+
+                android:layout_toRightOf="@id/call"
+                android:paddingBottom="10dp"
+                android:text="Contact"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/deletedata"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="70dp"
+                android:text="Id"
+
+                />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
